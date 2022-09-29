@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+import "bootstrap/dist/css/bootstrap.css"
+import AppRouter from "./AppRouter";
 import reportWebVitals from './reportWebVitals';
+import MainNav from "./MainNav";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <MainNav />
+      <AppRouter />
+    {/*<App />*/}
   </React.StrictMode>
 );
 
